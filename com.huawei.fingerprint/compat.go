@@ -6,6 +6,8 @@ import (
 )
 
 type Fingerprint = systemhuawei.Fingerprint
+type MockFingerprint = systemhuawei.MockFingerprint
+type MockInterfaceFingerprint = systemhuawei.MockInterfaceFingerprint
 
 func NewFingerprint(conn *godbus.Conn) Fingerprint {
 	return systemhuawei.NewFingerprint(conn)
