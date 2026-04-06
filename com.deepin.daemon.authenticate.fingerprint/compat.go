@@ -7,6 +7,10 @@ import (
 
 type Device = systemfp.Device
 type CommonDevice = systemfp.CommonDevice
+type MockDevice = systemfp.MockDevice
+type MockInterfaceDevice = systemfp.MockInterfaceDevice
+type MockCommonDevice = systemfp.MockCommonDevice
+type MockInterfaceCommonDevice = systemfp.MockInterfaceCommonDevice
 
 func NewDevice(conn *godbus.Conn, serviceName string, path godbus.ObjectPath) (Device, error) {
 	return systemfp.NewDevice(conn, serviceName, path)

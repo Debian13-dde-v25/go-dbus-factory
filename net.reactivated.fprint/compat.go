@@ -8,6 +8,11 @@ import (
 type ObjectManager = systemfprint.ObjectManager
 type Manager = systemfprint.Manager
 type Device = systemfprint.Device
+type MockObjectManager = systemfprint.MockObjectManager
+type MockManager = systemfprint.MockManager
+type MockInterfaceManager = systemfprint.MockInterfaceManager
+type MockDevice = systemfprint.MockDevice
+type MockInterfaceDevice = systemfprint.MockInterfaceDevice
 
 func NewObjectManager(conn *godbus.Conn) ObjectManager {
 	return systemfprint.NewObjectManager(conn)
