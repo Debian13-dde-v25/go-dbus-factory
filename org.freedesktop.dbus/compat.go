@@ -6,6 +6,8 @@ import (
 )
 
 type DBus = systemdbus.DBus
+type MockDBus = systemdbus.MockDBus
+type MockInterfaceDbusIfc = systemdbus.MockInterfaceDbusIfc
 
 func NewDBus(conn *godbus.Conn) DBus {
 	return systemdbus.NewDBus(conn)
